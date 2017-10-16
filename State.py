@@ -10,3 +10,10 @@ class State:
 		print("Inflow: {0}".format(self.inflow))
 		print("Volume: {0}".format(self.volume))
 		print("Outflow: {0}".format(self.outflow))
+		print("")
+
+	def create_label(self):
+		return str(self.inflow) + str(self.volume) + str(self.outflow)
+
+	def compare_state(self, state):
+		return self.inflow == state.inflow and self.outflow == state.outflow and self.volume == state.volume
