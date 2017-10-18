@@ -12,6 +12,9 @@ class State:
 		print("Outflow: {0}".format(self.outflow))
 		print("")
 
+	def rip(self):
+		return "State.State({0}, {1}, {2})".format(self.inflow, self.volume, self.outflow)
+
 	def create_label(self):
 		return str(self.inflow) + str(self.volume) + str(self.outflow)
 
